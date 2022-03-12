@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root{
+	--color:#398AB9;
+	--background-color:#398AB9;
+	--success:#39B964;
+	--warning:#B6B939;
+	--error:#B93939;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	height: 100vh;
+	background-color: #1C658C;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#container{
+	width: 1024px;
+	height: 500px;
+	display: flex;
+	margin: 10px;
+}
+
+#leftContainer{
+	flex: 3;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+	background-color: #fff;
+	padding: 20px;
+}
+
+
+#rightContainer{
+	flex: 1;
+	height: 500px;
+	font-size: 0.7em;
+	position: relative;
+	background-color:var(--color);
+	color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+.logOut .h{
+	background-color: var(--success);
+	color: white;
+	cursor: pointer;
+}
+
+.h{
+	background-color: white;
+	padding: 5px;
+	margin: 5px 5px;
+	border-radius: 5px;
+}
+
+.h~p{
+	background-color:#99A5B2;
+		padding: 5px;
+	margin: 5px 5px;
+	border-radius: 5px;
+	color: white;
+	
+}
+
+.sectionContainer{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sectionContainer p{
+	flex: 1;
+		background-color: #99A5B2;
+		padding: 5px;
+	margin: 5px 5px;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+}
+@media (max-width:650px){
+	#container{
+	flex-direction: column;
+		justify-content: center;
+		
+		
+}
+	
+	#leftContainer, #container{
+height: 700px;
+	
+	
+	}	
+	
+		#container{
+
+		margin-top: 100px;
+	
+	}	
+	
+	#rightContainer{
+		margin-bottom: 10px;
+	}
+	
+	.logOut{order:6;}
+}

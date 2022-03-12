@@ -1,0 +1,159 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+/*font-family: 'Raleway', sans-serif;*/
+
+* {
+    margin: 0px;
+	padding: 0px;
+	font-family:  'Raleway', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1C658C;
+}
+
+#ana-kapsayici {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 40px;
+    padding: 3%;
+    background: #fff ;
+}
+
+.column-container {
+  margin-top: 20px;
+}
+
+.kayit-text {
+    text-align: start;
+    font-weight: bold;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.line {
+    position: absolute;
+    width: 2%;
+    height: 4px;
+    background-color:#398AB9;
+    border-radius:1px;   
+}
+
+.input-section {
+   outline: none;
+   border: 0;
+   border-bottom: 2px solid gray;
+   width: 97%;
+   height: 5vh;
+   margin:auto;
+  
+}
+
+.select-container select{
+    width: 97%;
+    height: 3vh;
+    margin:auto;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid gray;
+
+}
+
+.kayit-btn {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-weight: 570;
+    letter-spacing: 1px;
+}
+
+.button {
+    text-align: center;
+    background: #fff;
+    border: 1.6px solid #398AB9;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    transition: all 0.6s;
+
+}
+
+.button:hover {
+    background-color: #398AB9;
+    color: #fff;
+}
+
+.foot {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.foot p {
+    margin-right: 10px;
+}
+
+.foot a{
+    text-decoration: none;
+    color: #398AB9;
+    font-weight: 850;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width:1000px){
+    #ana-kapsayici{
+		width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 40px;
+        padding: 3%;
+        background: #fff ;
+	}
+
+}
+
+
+
+@media (max-width:620px){
+	#ana-kapsayici{
+		width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 40px;
+        padding: 3%;
+        background: #fff ;
+	}
+
+    .line {
+        position: absolute;
+        width: 7%;
+        height: 3px;
+        background-color:#398AB9;
+        border-radius:1px;   
+    }
+
+
+    .foot {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+}
+
+
+
+
